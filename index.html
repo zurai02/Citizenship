@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizenship — Rights &amp; Responsibilities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="seal" aria-hidden="true">
+    <svg viewBox="0 0 120 120" width="56" height="56">
+      <circle cx="60" cy="60" r="54" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="60" cy="60" r="44" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M60 24 L67 50 L94 50 L72 66 L80 92 L60 76 L40 92 L48 66 L26 50 L53 50 Z" fill="currentColor"/>
+    </svg>
+  </div>
+  <p class="kicker">A note on the citizen and the state</p>
+  <h1>Citizenship</h1>
+  <p class="byline">Ahmad <span class="sep">·</span> 4 September 2026</p>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Why the law keeps changing</h2>
+    <p>As societies grow and modern technology advances, the law changes with them. There were, not long ago, no laws at all against cyber-exploitation — the harm didn't yet have a name the courts recognised. Civic rights and responsibilities move the same way: as a society grows, its laws update, and its politics shift to meet them.</p>
+  </section>
+
+  <section class="ledger" id="ledger">
+    <div class="ledger-intro">
+      <h2>What citizenship holds together</h2>
+      <p>Every citizen stands on both sides of the same page  what the state owes them, and what they owe in return. Hover or tap either side to see the balance tip.</p>
+    </div>
+
+    <div class="scale" aria-hidden="true">
+      <svg id="scale-svg" viewBox="0 0 400 140" preserveAspectRatio="xMidYMid meet">
+        <line x1="200" y1="18" x2="200" y2="100" stroke="var(--brass)" stroke-width="3"/>
+        <circle cx="200" cy="14" r="5" fill="var(--brass)"/>
+        <g id="beam">
+          <line x1="60" y1="0" x2="340" y2="0" stroke="var(--brass)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="60" y1="0" x2="60" y2="26" stroke="var(--brass)" stroke-width="1.5"/>
+          <line x1="340" y1="0" x2="340" y2="26" stroke="var(--brass)" stroke-width="1.5"/>
+          <path d="M38 26 Q60 52 82 26 Z" fill="none" stroke="var(--brass)" stroke-width="1.5"/>
+          <path d="M318 26 Q340 52 362 26 Z" fill="none" stroke="var(--brass)" stroke-width="1.5"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="columns">
+      <article class="column" id="col-rights" tabindex="0" aria-label="Civic rights">
+        <h3>Rights</h3>
+        <p class="column-lede">What the state owes every citizen.</p>
+        <ol class="articles">
+          <li><span class="num">Art. 1</span>The right to social justice.</li>
+          <li><span class="num">Art. 2</span>The right to vote.</li>
+          <li><span class="num">Art. 3</span>The right to freedom of speech.</li>
+          <li><span class="num">Art. 4</span>The right to education.</li>
+          <li><span class="num">Art. 5</span>No person shall be deprived of life or liberty save in accordance with law.</li>
+          <li><span class="num">Art. 6</span>Every person is entitled to a clean, healthy and sustainable environment.</li>
+        </ol>
+      </article>
+
+      <article class="column" id="col-duties" tabindex="0" aria-label="Civic responsibilities">
+        <h3>Responsibilities</h3>
+        <p class="column-lede">What every citizen owes in return.</p>
+        <ol class="articles">
+          <li><span class="num">Art. 1</span>Don't destroy public property.</li>
+          <li><span class="num">Art. 2</span>Pay taxes.</li>
+          <li><span class="num">Art. 3</span>Keep traffic discipline.</li>
+          <li><span class="num">Art. 4</span>Manage waste responsibly.</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon">
+  <p>A citizen's page  written and not since I'm lazy kept up to date by Ahmad.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
